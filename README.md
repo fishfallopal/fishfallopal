@@ -1,11 +1,11 @@
-# fishfallopal
+# Webweaver — Voxel Raid Boss
 
-- [x] Build **a Rust library for parsing configuration**
-- [ ] Learn **Rust**
-- [ ] Publish more notes
-- [ ] Collaborate on **GPU programming**
+Автономный Three.js-просмотрщик огромного восьминогого паука Webweaver.
 
-
-- Ask me about **GPU programming**
-
-> I write notes before code and tests after bugs.
+- Откройте `index.html` через локальный HTTP-сервер, например `python -m http.server 8080`.
+- Анимации: idle, walk, run, attack, hit и death; скорость регулируется.
+- VFX и автоповорот отключаются независимо. `R` сбрасывает камеру.
+- Модель босса находится в `boss.js`, отдельные миньоны генерируются из `minion.js`.
+- Webling 01 — разведчик, Webling 02 — страж, Webling 03 — жалоносец, Webling 04 — костяной ревенант. У каждого своя геометрия, пропорции и кристаллы.
+- Каждый экспортированный HTML автономен и содержит только одно существо.
+- Объекты для интеграции доступны через `window.__voxel`.
