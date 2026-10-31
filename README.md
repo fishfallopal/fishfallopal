@@ -1,11 +1,9 @@
-# fishfallopal
+# Ossuary — Voxel Raid Boss
 
-- [x] Build **a Rust library for parsing configuration**
-- [ ] Learn **Rust**
-- [ ] Publish more notes
-- [ ] Collaborate on **GPU programming**
+Автономный Three.js-просмотрщик массивного костяного босса и четырёх анимированных приспешников.
 
-
-- Ask me about **GPU programming**
-
-> I write notes before code and tests after bugs.
+- Откройте `index.html` через локальный HTTP-сервер, например `python -m http.server 8080`.
+- Анимации: idle, walk, run, attack, hit и death; скорость регулируется.
+- VFX, отряд и автоповорот отключаются независимо. `R` сбрасывает камеру.
+- Модель и процедурная геометрия находятся в `boss.js`; Three.js уже встроен в HTML.
+- Объекты для интеграции доступны через `window.__voxel`.
